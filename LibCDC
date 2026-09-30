@@ -1,0 +1,27 @@
+{"name":"CDC Lib",
+  "version":"1.0",
+  "description":"Library with scenes and device for HC3",
+  "root":"https://raw.githubusercontent.com/carlosdiazcatalannice--droid/EventRunner/",
+  "scenes":[
+    {"name":"Wait for sensor",
+    "uid":"77trfbjasf723fbf873fjakf59",
+    "version":"v0.1",
+    "url":"WaitForSensor_v1.lua",
+    "description":"Example of how to wait for a sensor to be safe for a specified time before turning off a light"
+    },
+  ],
+  "devices":[
+    {"name":"Crash notifier",
+    "uid":"77trfbjasf723fbf873fjakf60",
+    "version":"v0.1",
+    "url":"CrashNotifier_v1.lua",
+    "description":"Logs all QuickApps that crashes. Optionally pushes a message to the phone"
+    },
+    {"name":"Profiler scheduler",
+    "uid":"77trfbjasf723fbf873fjakf61",
+    "version":"v0.1",
+    "url":"ProfSched_v1.lua",
+    "description":"A simple app to schedule profiles during the day"
+    }
+  ]
+}

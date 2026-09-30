@@ -1,7 +1,7 @@
 {"name":"CDC Lib",
   "version":"1.0",
   "description":"Library with scenes and device for HC3",
-  "root":"https://raw.githubusercontent.com/carlosdiazcatalannice--droid/CDC-lib/",
+  "root":"https://raw.githubusercontent.com/carlosdiazcatalannice--droid/CDC-lib/master/Lib/",
   "scenes":[
     {"name":"Wait for sensor",
     "uid":"77trfbjasf723fbf873fjakf59",

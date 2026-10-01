@@ -17,10 +17,10 @@
     "url":"CrashNotifier_v1.lua",
     "description":"Logs all QuickApps that crashes. Optionally pushes a message to the phone"
     },
-    {"name":"Profiler scheduler",
+    {"name":"Ajax",
     "uid":"77trfbjasf723fbf873fjakf61",
-    "version":"v0.1",
-    "url":"ProfSched_v1.lua",
+    "version":"v0.3",
+    "url":"AJAX_0.0.1_kimbo.fqax",
     "description":"A simple app to schedule profiles during the day"
     }
   ]

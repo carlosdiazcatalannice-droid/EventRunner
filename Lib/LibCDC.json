@@ -4,7 +4,7 @@
   "root":"https://raw.githubusercontent.com/carlosdiazcatalannice/CDC-lib/master/Lib/",
   "devices":[
     {"name":"Crash notifier",
-    "uid":"77trfbjasf723fbf873fjakf60",
+    "uid":"77trfbjasf723fbf873fjakf62",
     "version":"v0.1",
     "url":"CrashNotifier_v1.lua",
     "description":"Logs all QuickApps that crashes. Optionally pushes a message to the phone"

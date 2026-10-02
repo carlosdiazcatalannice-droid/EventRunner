@@ -2,57 +2,76 @@
   "version":"1.0",
   "description":"Library with scenes and device for HC3",
   "root":"https://raw.githubusercontent.com/carlosdiazcatalannice/CDC-lib/master/Lib/",
-  "restricction" : [
-    ["excludedBrands"] = {
-            ["Nice"] = true,
-            ["NICE"] = true,
-            ["Goap"] = true,
-            ["Zooz"] = true,
-            ["Hoppe"] = true,
-            ["Fantem"] = true,
-            ["Danfoss"] = true,
-            ["AEON Labs"] = true,
-            ["Popp & Co"] = true,
-            ["Fibargroup"] = true,
-            ["Nice S.p.A."] = true,
-            ["ThermoFloor"] = true,
-            ["Poly-control"] = true,
-            ["Sensative AB"] = true,
-            ["Aeotec Limited"] = true,
-            ["Vision Security"] = true,
-            ["Philio Technology Corp"] = true,
-            ["McoHome Technology Co., Ltd"] = true,
-            ["ShenZhen Sunricher Technology Limited"] = true,
-            ["Shenzhen iSurpass Technology Co. ,Ltd"] = true,
-            ["Airzone - Corporación Empresarial Altra S.L."] = true,
-            ["TEDEE Spółka z Ograniczoną Odpowiedzialnością"]  = true
-        },
-        ["allowedSpecificData"] = { --S3DM-0A1WW NOS HACE FALTA https://kb.shelly.cloud/knowledge-base/shelly-knx-documentation
-            ["QNSW-001X16EU"] = false,  -- Wave 1 (Interruptor 1 canal)
-            ["QNSW-001P16EU"] = false,  -- Wave 1PM (Interruptor 1 canal + Medición)
-            ["QNSW-002P16EU"] = false,  -- Wave 2PM (Interruptor 2 canales + Medición)
-            ["QNSH-001P10EU"] = false,  -- Wave Shutter (Persianas)
-            ["QNSN-0A24XEU"] = true,   -- Wave i4 (Controlador de escenas 4 entradas - AC)
-            ["QNSN-0D24XEU"] = false,  -- Wave i4 DC (Controlador de escenas - DC)
-            ["QPSW-0A1X16EU"] = false,  -- Wave Pro 1 (1 Canal)
-            ["QPSW-0A1P16EU"] = false,  -- Wave Pro 1PM (1 Canal + Medición)
-            ["QPSW-0A2X16EU"] = false,  -- Wave Pro 2 (2 Canales)
-            ["QPSW-0A2P16EU"] = false,  -- Wave Pro 2PM (2 Canales + Medición)
-            ["QPSW-0A3X16EU"] = false,  -- Wave Pro 3 (3 Canales)
-            --["QPSW-0A2S10EU"] = false,  -- Wave Pro Shutter (Persianas DIN)
-            ["QPSH-0A1P10EU"] = false,  -- Wave Pro Shutter (Persianas DIN)
-            ["QMSW-0A1X8EU"]  = false,  -- Wave 1 Mini
-            ["QMSW-0A1P8EU"]  = false,  -- Wave 1PM Mini
-            ["QMEM-0A1PC16EU"]  = false,  -- Wave PM Mini
-            ["QNPL-001X12UK"] = false,
-            ["QNPL-001X16US"] = true,
-            ["QNDW-001C16EU"] = false,  -- Wave Door/Window EU
-            ["QNDW-0A1C16EU"] = false,  -- Wave Door/Window EU LR (Long Range)
-            ["QNDW-0A1C16US"] = false,  -- Wave Door/Window US LR
-            ["QNHT-001C16EU"] = false,  -- Wave H&T EU LR
-            ["QNHT-001C16US"] = false,  -- Wave H&T US LR
-            ["QNHT-001C16AU"] = false,  -- Wave H&T ANZ
-            ["QNMS-001C16EU"] = false,  -- Wave Motion EU LR
-            ["QNMS-001C16US"] = false   -- Wave Motion US LR
-  ]}
+  "devices":[
+    {"name":"Crash notifier",
+    "uid":"77trfbjasf723fbf873fjakf62",
+    "manufacturer":"C.D.C",
+    "id":"Crash notifier",
+    "version":"v0.1",
+    "url":"CrashNotifier_v1.lua",
+    "description":"Logs all QuickApps that crashes. Optionally pushes a message to the phone"
+    },
+    {"name":"AJAX",
+    "manufacturer":"C.D.C",
+    "id":"AJAX",
+    "uid":"77trfbjasf723fbf873fjakf60",
+    "version":"v0.2",
+    "url":"AJAX_0.0.1_kimbo.fqax",
+    "description":"A simple app to schedule profiles during the day"
+    }
+  ]
+  "restricction": [
+    "excludedBrands": [
+        "Nice": true,
+        "NICE": true,
+        "Goap": true,
+        "Zooz": true,
+        "Hoppe": true,
+        "Fantem": true,
+        "Danfoss": true,
+        "AEON Labs": true,
+        "Popp & Co": true,
+        "Fibargroup": true,
+        "Nice S.p.A.": true,
+        "ThermoFloor": true,
+        "Poly-control": true,
+        "Sensative AB": true,
+        "Aeotec Limited": true,
+        "Vision Security": true,
+        "Philio Technology Corp": true,
+        "McoHome Technology Co., Ltd": true,
+        "ShenZhen Sunricher Technology Limited": true,
+        "Shenzhen iSurpass Technology Co. ,Ltd": true,
+        "Airzone - Corporación Empresarial Altra S.L.": true,
+        "TEDEE Spółka z Ograniczoną Odpowiedzialnością": true
+    ],
+    "allowedSpecificData": { --S3DM-0A1WW NOS HACE FALTA https://kb.shelly.cloud/knowledge-base/shelly-knx-documentation
+      "QNSW-001X16EU": false,  -- Wave 1 (Interruptor 1 canal)
+      "QNSW-001P16EU": false,  -- Wave 1PM (Interruptor 1 canal + Medición)
+      "QNSW-002P16EU": false,  -- Wave 2PM (Interruptor 2 canales + Medición)
+      "QNSH-001P10EU": false,  -- Wave Shutter (Persianas)
+      "QNSN-0A24XEU": true,   -- Wave i4 (Controlador de escenas 4 entradas - AC)
+      "QNSN-0D24XEU": false,  -- Wave i4 DC (Controlador de escenas - DC)
+      "QPSW-0A1X16EU": false,  -- Wave Pro 1 (1 Canal)
+      "QPSW-0A1P16EU": false,  -- Wave Pro 1PM (1 Canal + Medición)
+      "QPSW-0A2X16EU": false,  -- Wave Pro 2 (2 Canales)
+      "QPSW-0A2P16EU": false,  -- Wave Pro 2PM (2 Canales + Medición)
+      "QPSW-0A3X16EU": false,  -- Wave Pro 3 (3 Canales)
+      --"QPSW-0A2S10EU": false,  -- Wave Pro Shutter (Persianas DIN)
+      "QPSH-0A1P10EU": false,  -- Wave Pro Shutter (Persianas DIN)
+      "QMSW-0A1X8EU": false,  -- Wave 1 Mini
+      "QMSW-0A1P8EU": false,  -- Wave 1PM Mini
+      "QMEM-0A1PC16EU": false,  -- Wave PM Mini
+      "QNPL-001X12UK": false,
+      "QNPL-001X16US": true,
+      "QNDW-001C16EU": false,  -- Wave Door/Window EU
+      "QNDW-0A1C16EU": false,  -- Wave Door/Window EU LR (Long Range)
+      "QNDW-0A1C16US": false,  -- Wave Door/Window US LR
+      "QNHT-001C16EU": false,  -- Wave H&T EU LR
+      "QNHT-001C16US": false,  -- Wave H&T US LR
+      "QNHT-001C16AU": false,  -- Wave H&T ANZ
+      "QNMS-001C16EU": false,  -- Wave Motion EU LR
+      "QNMS-001C16US": false   -- Wave Motion US LR
+    }
+  ]
 }

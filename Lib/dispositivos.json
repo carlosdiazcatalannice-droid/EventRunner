@@ -2,7 +2,7 @@
   "version":"1.0",
   "description":"Library with scenes and device for HC3",
   "root":"https://raw.githubusercontent.com/carlosdiazcatalannice/CDC-lib/master/Lib/",
-  "restricction": [
+  "restricction": {
     "excludedBrands": {
         "Nice": true,
         "NICE": true,
@@ -54,5 +54,5 @@
       "QNMS-001C16EU": false,
       "QNMS-001C16US": false
     }
-  ]
+  }
 }

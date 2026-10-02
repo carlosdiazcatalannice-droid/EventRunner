@@ -1,6 +1,6 @@
 {"name":"CDC Lib",
-  "version":"1.0",
-  "description":"Library with scenes and device for HC3",
+  "version":"0.2",
+  "description":"Library zwave",
   "root":"https://raw.githubusercontent.com/carlosdiazcatalannice/CDC-lib/master/Lib/",
   "restricction": {
     "excludedBrands": {

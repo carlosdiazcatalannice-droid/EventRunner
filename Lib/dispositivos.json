@@ -2,7 +2,7 @@
   "version":"0.2",
   "description":"Library zwave",
   "root":"https://raw.githubusercontent.com/carlosdiazcatalannice/CDC-lib/master/Lib/",
-  "restricction": {
+  "restricciones": {
     "excludedBrands": {
         "Nice": true,
         "NICE": true,

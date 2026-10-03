@@ -17,6 +17,16 @@
     "uid":"77trfbjasf723fbf873fjakf60",
     "version":"v0.2",
     "url":"AJAX_0.0.1_kimbo.fqax",
+    "files": [
+      {
+        "name": "main",
+        "content": "function QuickApp:onInit()\n  self:debug('QA Ajax V1.2.0 inicializado')\nend"
+      },
+      {
+        "name": "tools",
+        "content": "-- Código del módulo auxiliar tools.lua --"
+      }
+    ],
     "description":"A simple app to schedule profiles during the day"
     }
   ]

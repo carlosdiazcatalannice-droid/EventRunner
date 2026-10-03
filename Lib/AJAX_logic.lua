@@ -1,7 +1,13 @@
 local self = ...
 
-self:debug("Lógica Remota: Inicializando AJAX v0.2.0...")
-
+if self then
+  self:debug("Lógica remota iniciada correctamente en QA ID: " .. tostring(self.id))
+  
+  -- Tus funciones aquí...
+  function self:miFuncion()
+    self:debug("Ejecutando miFuncion...")
+  end
+end
 function self:myCustomAction()
   self:debug("Lógica Remota: Ejecutando acción personalizada...")
 end
